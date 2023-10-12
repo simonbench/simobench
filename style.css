@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background: #e9e9e9;
+}
+header{
+    min-height: 100vh;
+}
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 888;
+    min-height: 80px;
+    background: #e9e9e9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 9%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+header nav .logo{
+    cursor: pointer;
+}
+header nav .logo h1{
+    color: black;
+}
+header nav .logo h1 span{
+    color: #3aa47a;
+}
+header nav .menu{
+    display: flex;
+    gap: 50px;
+}
+header nav .menu a{
+    color: black;
+    font-weight: 600;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+header nav .menu .active{
+    color: white;
+    background: #3aa47a;
+}
+header nav .icones{
+    display: flex;
+    gap: 20px;
+}
+header nav .icones i{
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    transition: .3s ease;
+}
+header nav .icones i:hover{
+    background: #3aa47a;
+    color: white;
+}
+header nav .btn a{
+    background: #0f1b46;
+    color: white;
+    border-radius: 7px;
+    padding: 7px 25px;
+}
+header nav .hamburger{
+    display: none;
+}
+header .container{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 9%;
+}
+header .container .text span{
+    color: #3aa47a;
+    font-weight: 500;
+}
+header .container .text h1{
+    color: #0f1b46;
+    font-size: 3.6rem;
+}
+header .container .text p{
+    max-width: 430px;
+    font-weight: 500;
+    font-size: .9rem;
+    margin: 10px 0 20px;
+}
+header .container .text .btn a{
+    border: 1px solid #0f1b46;
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+header .container .text .btn .first{
+    background: #0f1b46;
+    color: white;
+    margin-right: 10px;
+}
+header .container .text .btn .second{
+    color: #0f1b46;
+}
+header .container .image img{
+    max-width: 400px;
+    animation: test 5s ease forwards infinite;
+}
+@keyframes test {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+header .container .image .test{
+    height: 25px;
+    width: 400px;
+    background: rgba(0, 0, 0, .3);
+    filter: blur(5px);
+    border-radius: 50%;
+    animation: testone 5s ease forwards infinite;
+}
+@keyframes testone {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+section{
+    min-height: 100vh;
+    padding-inline: 9%;
+}
+#dishes .tt h1{
+    text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+    top: 50px;
+}
+#dishes .tt h1 span{
+    color: #3aa47a;
+}
+#dishes .herosection{
+    min-height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#dishes .herosection .first{
+    border: 1px solid #0f1b46;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 20px;
+    cursor: default;
+    position: relative;
+    transition: .9s;
+}
+#dishes .herosection .first:hover{
+    box-shadow: 0 0 15px #0f1b46;
+    transform: scale(1.2);
+}
+#dishes .herosection .first img{
+    max-width: 200px;
+    position: absolute;
+    top: -90px;
+}
+#dishes .herosection .first h1{
+    margin-top: 7rem;
+}
+#dishes .herosection .first p{
+    max-width: 200px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+#dishes .herosection .first .btn a{
+    border: 1px solid #3aa47a;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+#dishes .herosection .first .btn .one{
+    color: #3aa47a;
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+#dishes .herosection .first .btn .two{
+    background: #3aa47a;
+    color: white;
+}
+#about .title h1{
+    text-align: center;
+    font-size: 1.7rem;
+    /*position: relative;
+    top: 8rem;*/
+}
+#about .title h1 span{
+    color: #3aa47a;
+}
+#about .cards{
+    min-height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#about .cards .first{
+    border: 10px solid #3aa47a;
+    border-radius: 20px;
+    height: 350px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: #d6d4d4;
+    cursor: pointer;
+}
+#about .cards .test{
+    position: relative;
+    top: 50px;
+}
+#about .cards .first img{
+    max-width: 250px;
+    max-height: 300px;
+}
+#about .secondtitle{
+    text-align: center;
+    margin: 12rem 0 9rem;
+}
+#about .secondtitle h1{
+    font-size: 1.6rem;
+}
+#about .secondtitle h1 span{
+    color: #3aa47a;
+}
+#about .secondcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /*margin-top: 90px;*/
+}
+#about .secondcards .first{
+    max-width: 320px;
+    text-align: center;
+    padding: 20px 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: .5s;
+}
+#about .secondcards .first:hover{
+    transform: scale(1.1);
+}
+#about .secondcards .first i{
+    font-size: 4rem;
+    color: #3aa47a;
+}
+#about .secondcards .first h1{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#review{
+    min-height: 65vh;
+}
+#review .hg h1{
+    /*position: relative;*/
+    /*top: 11rem;*/
+    text-align: center;
+    margin-top: 9rem;
+}
+#review .hg h1 span{
+    color: #3aa47a;
+}
+#review .mySwiper .swiper-wrapper .swiper-slide{
+    min-height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding-left: 7rem;
+}
+#review .mySwiper .swiper-wrapper .swiper-slide img{
+    background: black;
+    min-height: 270px;
+    max-width: 170px;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#review .mySwiper .swiper-wrapper .swiper-slide .text{
+    max-width: 700px;
+}
+#review .mySwiper .swiper-wrapper .swiper-slide .text p{
+    max-width: 620px;
+    margin: 15px 0 10px;
+    font-size: .9rem;
+}
+#review .mySwiper .swiper-wrapper .swiper-slide .text span{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#review .mySwiper .swiper-wrapper .swiper-slide .text .stars{
+    color: #dbd424;
+}
+footer{
+    background: black;
+    min-height: 20vh;
+}
+footer nav{
+    min-height: 60px;
+    max-width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    border-bottom: 1px solid #d6d4d4;
+}
+footer nav .logo h3{
+    color: #d6d4d4;
+    font-weight: 500;
+}
+footer nav .menu a{
+    margin-right: 30px;
+    color: #d6d4d4;
+}
+footer nav .icones i{
+    border-radius: 50%;
+    background: #3aa47a;
+    border: 1px solid #3aa47a;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+    transition: .5s ease;
+}
+footer nav .icones i:hover{
+    background: black;
+    color: #3aa47a;
+}
+footer .text{
+    text-align: center;
+    margin-top: 15px;
+}
+footer .text span{
+    color: #d6d4d4;
+    font-size: .9rem;
+}
+/*@media (max-width: 390px) {
+    header nav .icones{
+        gap: 10px;
+    }
+    header .container .text h1{
+        font-size: 1px;
+    }
+}*/
+@media (max-width: 470px) {
+    header .container .text h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 900px) {
+    header nav .logo h1{
+        font-size: 1rem;
+    }
+    header nav .menu{
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        backdrop-filter: blur(9px);
+        transition: .3s;
+    }
+    header nav .menu.active{
+        left: 0;
+    }
+    header nav .menu a{
+        margin: 10px auto;
+    }
+    header nav .btn a{
+        font-size: .9rem;
+        padding: 5px 9px;
+    }
+    header nav .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    header nav .hamburger span{
+        display: block;
+        height: 3px;
+        width: 25px;
+        margin: 5px auto;
+        background: #0f1b46;
+        transition: .3s;
+    }
+    header nav .hamburger.active span:nth-child(2){
+        opacity: 0;
+    }
+    header nav .hamburger.active span:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    header nav .hamburger.active span:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    header .container{
+        padding: 9rem 9%;
+        justify-content: center;
+        gap: 50px;
+    }
+    header .container .text span{
+        display: block;
+        text-align: center;
+    }
+    header .container .text h1{
+        text-align: center;
+    }
+    header .container .text p{
+        text-align: center;
+    }
+    header .container .text .btn{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    header .container .image img{
+        max-width: 300px;
+        animation: test 0;
+    }
+    header .container .image .test{
+        width: 300px;
+        animation: testone 0;
+    }
+    #dishes .tt h1{
+        position: static;
+    }
+    #dishes .herosection{
+        justify-content: center;
+        gap: 9rem;
+        margin-top: 9rem;
+    }
+    #dishes .herosection .first:hover{
+        transform: scale(1);
+    }
+    #about .title{
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+    #about .cards{
+        justify-content: center;
+        gap: 30px;
+    }
+    #about .cards .test{
+        position: static;
+    }
+    #about .secondcards{
+        justify-content: center;
+        gap: 50px;
+    }
+    #review{
+        min-height: 100vh;
+    }
+    #review .hg{
+        margin-bottom: 90px;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide{
+        justify-content: center;
+        padding-inline: 50px;
+        padding-bottom: 50px;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide .text h1{
+        text-align: center;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide .text p{
+        text-align: justify;
+        max-width: 500px;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide .text span{
+        text-align: center;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide .text .stars{
+        text-align: center;
+    }
+    footer nav{
+        min-height: 90px;
+        justify-content: center;
+    }
+    footer nav .logo{
+        margin-right: 20px;
+    }
+    footer nav .logo h3{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 920px) {
+    header nav .btn a{
+        font-size: .9rem;
+        padding: 5px 9px;
+    }
+    #about .cards{
+        gap: 50px;
+    }
+}
+@media (max-width: 1000px) {
+    header nav .menu{
+        gap: 30px;
+    }
+    header nav .menu a{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 390px) {
+    header nav .icones{
+        gap: 10px;
+    }
+    header .container .text h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 365px) {
+    header nav {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    header nav .hamburger{
+        margin-left: 30px;
+    }
+    header .container .image img{
+        max-width: 200px;
+    }
+    header .container .image .test{
+        width: 200px;
+    }
+    #dishes .herosection .first .btn a{
+        padding: 3px;
+    }
+    footer nav .menu a{
+        font-size: .9rem;
+        margin-right: 5px;
+    }
+}
+@media (max-width: 264px) {
+    header .container .text span{
+        font-size: .9rem;
+    }
+    header .container .text h1{
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+    header .container .text .btn a{
+        font-size: .5rem;
+    }
+    #dishes .herosection .first .btn a{
+        font-size: .7rem;
+    }
+}
+@media (max-width: 216px) {
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .container .image img{
+        max-width: 100px;
+    }
+    header .container .image .test{
+        width: 100px;
+    }
+    #dishes .herosection .first .btn a{
+        font-size: .5rem;
+    }
+}
+@media (max-width: 1015px) {
+    header .container{
+        padding: 9rem 9%;
+        justify-content: center;
+        gap: 30px;
+    }
+    header .container .text span{
+        display: block;
+        text-align: center;
+    }
+    header .container .text h1{
+        text-align: center;
+        margin-top: 10px;
+    }
+    header .container .text p{
+        text-align: center;
+    }
+    header .container .text .btn{
+        display: flex;
+        justify-content: center;
+    }
+    header .container .image img{
+        animation: test 0;
+    }
+    header .container .image .test{
+        animation: testone 0;
+    }
+}
+@media (max-width: 1178px) {
+    #dishes .herosection{
+        margin-top: 10rem;
+        gap: 90px;
+    }
+    #about .secondcards{
+        gap: 90px;
+    }
+}
+@media (max-width: 700px) {
+    #review .mySwiper .swiper-wrapper .swiper-slide{
+        padding-inline: 50px;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide .text p{
+        max-width: 300px;
+    }
+}
+@media (max-width: 1138px) {
+    #review .mySwiper .swiper-wrapper .swiper-slide{
+        justify-content: center;
+        
+    }
+}
+@media (max-width: 1133px) {
+    #review .mySwiper .swiper-wrapper .swiper-slide{
+        padding-left: 0;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide .text h1{
+        text-align: center;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide .text p{
+        text-align: justify;
+        max-width: 500px;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide .text span{
+        text-align: center;
+    }
+    #review .mySwiper .swiper-wrapper .swiper-slide .text .stars{
+        text-align: center;
+    }
+}
+@media (max-width: 943px) {
+    #review .mySwiper .swiper-wrapper .swiper-slide{
+        padding-inline: 30px;
+    }
+}
+@media (max-width: 925px) {
+    #review .mySwiper .swiper-wrapper .swiper-slide{
+        padding-bottom: 20px;
+    }
+}
